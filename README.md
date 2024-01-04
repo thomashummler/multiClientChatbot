@@ -28,8 +28,6 @@ pip install -r requirements.txt
 
 3- Run the ChatBot:
 
-bash
-
     python chatbot.py
 
     Start Shopping:
