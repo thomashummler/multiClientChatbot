@@ -9,9 +9,9 @@ import numpy as np
 import re
 import json
 from openai import OpenAI
+import creds
 
-
-openai_api_key = API_KEY
+openai_api_key = creds.API_KEY
 
 file_path = 'Rieker_SUMMERANDWINTER_DATA.xlsx'
 
