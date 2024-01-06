@@ -130,7 +130,8 @@ antwort_Message = chat_User.choices[0].message.content
 print(antwort_Message)
 
 while True:
-    user_input = input("Type In what kind of shoe u want(type 'exit' or 'quit' to quit): ")
+    #user_input = input("Type In what kind of shoe u want(type 'exit' or 'quit' to quit): ")
+    user_input= "schwarzer Schuh"
     if user_input.lower() == "exit" or user_input.lower() == "quit":
         break
     else:
