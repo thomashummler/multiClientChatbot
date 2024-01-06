@@ -3,8 +3,8 @@ name: Python CI
 on:
     workflow_dispatch:
 
-env: 
-    API_KEY : ${{ secrets.API_KEY }}
+env:
+    API_KEY: ${{ secrets.API_KEY }}
 
 jobs:
   run-python-script:
@@ -21,13 +21,14 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: '3.12'
-
+        
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install pandas openpyxl openai
-
+    
     - name: Run Python script
       run: python multiClientChatbot.py
+
 
 
