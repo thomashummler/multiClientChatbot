@@ -131,16 +131,16 @@ print(antwort_Message)
 
 
 user_inputs= {"Ich hätte gerne einen weißen SChuh","Der SChuh sollte für den Winter sein","Der Schuh sollte zum Schnüren sein"}
-arrayLen= len(user_inputs)
-index=0
-while index < arrayLen:
-    index = index + 1
-    user_input=  user_inputs[index]
+#arrayLen= len(user_inputs)
+#index=0
+for user_input in user_inputs:
+   
+#    user_input=  user_inputs[index]
     #user_input = input("Type In what kind of shoe u want(type 'exit' or 'quit' to quit): ")
-    user_input= "schwarzer Schuh"
-    if user_input.lower() == "exit" or user_input.lower() == "quit":
-        break
-    else:
+ #   user_input= "schwarzer Schuh"
+ #   if user_input.lower() == "exit" or user_input.lower() == "quit":
+ #       break
+#    else:
         chatVerlauf_Information.append({"role": "user", "content": user_input}),
         chat_Filter = client.chat.completions.create(
         model="gpt-4-1106-preview",
