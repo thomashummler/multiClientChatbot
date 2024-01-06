@@ -10,7 +10,7 @@ import re
 import json
 from openai import OpenAI
 
-API_KEY = os.environ("API_KEY")
+API_KEY = os.environ["API_KEY"]
 
 openai_api_key = API_KEY
 
