@@ -3,15 +3,16 @@
 #pip install openai
 
 
-
+import os
 import pandas as pd
 import numpy as np
 import re
 import json
 from openai import OpenAI
-import creds
 
-openai_api_key = creds.API_KEY
+API_KEY = os.environ("API_KEY")
+
+openai_api_key = API_KEY
 
 file_path = 'Rieker_SUMMERANDWINTER_DATA.xlsx'
 
