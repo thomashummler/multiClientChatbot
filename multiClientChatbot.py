@@ -129,7 +129,13 @@ chat_User = client.chat.completions.create(
 antwort_Message = chat_User.choices[0].message.content
 print(antwort_Message)
 
-while True:
+
+user_inputs= {"Ich hätte gerne einen weißen SChuh","Der SChuh sollte für den Winter sein","Der Schuh sollte zum Schnüren sein"}
+arrayLen= len(user_inputs)
+index=0
+while index < arrayLen:
+    index = index + 1
+    user_input=  user_inputs[index]
     #user_input = input("Type In what kind of shoe u want(type 'exit' or 'quit' to quit): ")
     user_input= "schwarzer Schuh"
     if user_input.lower() == "exit" or user_input.lower() == "quit":
